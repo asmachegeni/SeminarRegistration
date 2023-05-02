@@ -1,0 +1,208 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #dfe0e3;
+  line-height: 24px;
+}
+.ticketContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 30vw;
+  height: 75vh;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.ticketHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: inherit;
+  height: 25vh;
+  background: radial-gradient(
+      circle at top,
+      transparent 60%,
+      #341d4c 61%,
+      #341d4c 66%,
+      transparent 67%
+    ),
+    radial-gradient(
+      circle at bottom,
+      transparent 60%,
+      #341d4c 61%,
+      #341d4c 66%,
+      transparent 67%
+    ),
+    radial-gradient(
+      circle at left,
+      transparent 60%,
+      #341d4c 61%,
+      #341d4c 66%,
+      transparent 67%
+    ),
+    radial-gradient(
+      circle at right,
+      transparent 60%,
+      #341d4c 61%,
+      #341d4c 66%,
+      transparent 67%
+    );
+  background-size: 3em 3em;
+  background-color: #291143;
+  opacity: 1;
+  border-radius: 8px 8px 0 0;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+.ticketBody {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-start;
+  margin-right: 16px;
+  margin-top: 24px;
+}
+.field {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 12px;
+  justify-content: space-evenly;
+}
+.title {
+  font-size: 16px;
+  font-family: "Vazir-Medium";
+  color: #341d4c;
+  margin-left: 12px;
+}
+.value {
+  font-size: 16px;
+  font-family: "Vazir-Regular";
+  color: #2d2d2d;
+}
+.ticketFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.effect {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.circle {
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 150px;
+  background-color: #dfe0e3;
+}
+.line {
+  width: 27vw;
+  height: 1px;
+  border-top-style: dashed;
+  border-top-color: #4d4d4d;
+  border-top-width: 1px;
+}
+#barcode {
+  width: 25vw;
+  height: 15vh;
+}
+#printbtn {
+  margin-top: 12px;
+  width: 30vw;
+  height: 32px;
+  background-color: #291143;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Vazir-Medium";
+  border: none;
+  border-radius: 8px;
+}
+#printbtn:hover{
+  cursor: pointer;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#text1 {
+  font-size: 14px;
+  font-family: "Vazir-Regular";
+  color: #fff;
+}
+#text2 {
+  font-size: 22px;
+  font-family: "Vazir-Medium";
+  margin-top: 16px;
+  color: #fff;
+}
+@media screen and (max-width: 1280px) {
+  .ticketContainer {
+    width: 40vw;
+  }
+  .line {
+    width: 37vw;
+  }
+  #text1 {
+    font-size: 14px;
+    font-family: "Vazir-Regular";
+    color: #fff;
+  }
+  #text2 {
+    font-size: 18px;
+    font-family: "Vazir-Medium";
+    margin-top: 16px;
+    color: #fff;
+  }
+  .ticketHeader > img {
+    width: 73px;
+
+    height: 96px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .ticketContainer {
+    width: 50vw;
+  }
+  .line {
+    width: 47vw;
+  }
+  .circle {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 2.5vw;
+    background-color: #dfe0e3;
+  }
+  .title,
+  .value {
+    font-size: 12px;
+  }
+  #barcode {
+    width: 45vw;
+    height: 15vh;
+  }
+  #text1 {
+    font-size: 12px;
+    font-family: "Vazir-Regular";
+    color: #fff;
+  }
+  #text2 {
+    font-size: 16px;
+    font-family: "Vazir-Medium";
+    margin-top: 16px;
+    color: #fff;
+  }
+  .ticketHeader > img {
+    width: 73px;
+
+    height: 96px;
+  }
+}

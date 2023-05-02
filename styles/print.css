@@ -1,0 +1,20 @@
+.ticketContainer {
+  width: 550px;
+  height: 700px;
+  border-style: dashed;
+  border-color: #4d4d4d;
+  border-width: 1px;
+}
+.ticketHeader {
+  background-color: #291143;
+}
+#printbtn{
+    display: none;
+}
+.line{
+    width: 550px;
+  height: 1px;
+  border-top-style: dashed;
+  border-top-color: #4d4d4d;
+  border-top-width: 1px;
+}
